@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bytex — Digitalna rešenja</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #050505;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background:
+        radial-gradient(circle at top, #183cff 0%, transparent 35%),
+        linear-gradient(180deg, #080808, #020202);
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .logo {
+      font-size: 64px;
+      font-weight: 900;
+      letter-spacing: 6px;
+      margin-bottom: 20px;
+    }
+
+    .logo span {
+      color: #3867ff;
+    }
+
+    h1 {
+      font-size: clamp(38px, 8vw, 72px);
+      line-height: 1.05;
+      margin-bottom: 25px;
+    }
+
+    .hero-text {
+      color: #bdbdbd;
+      font-size: 20px;
+      max-width: 650px;
+      margin: 0 auto 35px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 16px 30px;
+      margin: 8px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      background: #3867ff;
+      color: white;
+      transition: 0.2s;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+      background: #557dff;
+    }
+
+    .button.secondary {
+      background: transparent;
+      border: 1px solid #444;
+    }
+
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 40px;
+      margin-bottom: 45px;
+    }
+
+    .cards {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #101010;
+      border: 1px solid #202020;
+      border-radius: 20px;
+      padding: 30px;
+      text-align: left;
+    }
+
+    .card h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #999;
+    }
+
+    .icon {
+      font-size: 35px;
+      margin-bottom: 15px;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #0b0b0b, #111b4d);
+    }
+
+    footer {
+      padding: 30px 20px;
+      text-align: center;
+      color: #666;
+      border-top: 1px solid #151515;
+    }
+
+    @media (max-width: 600px) {
+      .logo {
+        font-size: 48px;
+      }
+
+      .hero-text {
+        font-size: 17px;
+      }
+
+      section {
+        padding: 60px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+
+      <div class="logo">BY<span>T</span>EX</div>
+
+      <h1>
+        Tvoja ideja.<br>
+        Naš digitalni svet.
+      </h1>
+
+      <p class="hero-text">
+        Bytex pomaže malim biznisima i ljudima da izgledaju
+        profesionalno na internetu — jednostavno, brzo i pristupačno.
+      </p>
+
+      <a href="#ponuda" class="button">
+        Pogledaj ponudu
+      </a>
+
+      <a href="https://www.instagram.com/" class="button secondary">
+        Instagram
+      </a>
+
+    </div>
+  </header>
+
+  <section id="ponuda">
+
+    <h2>Šta Bytex radi?</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">🌐</div>
+        <h3>Web sajtovi</h3>
+        <p>
+          Moderne i jednostavne prezentacije za firme,
+          preduzetnike, lokale i male biznise.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📱</div>
+        <h3>Društvene mreže</h3>
+        <p>
+          Ideje, vizuali i sadržaj koji pomažu da tvoj
+          profil izgleda profesionalnije.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🎨</div>
+        <h3>Dizajn</h3>
+        <p>
+          Logo, reklame, objave i vizuelni identitet
+          prilagođen tvom brendu.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🚀</div>
+        <h3>Digitalni start</h3>
+        <p>
+          Ako tek pokrećeš posao, Bytex ti pomaže da
+          napraviš prvi ozbiljan digitalni nastup.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="cta">
+
+    <h2>Spreman za sledeći korak?</h2>
+
+    <p style="color:#aaa; max-width:600px; margin:0 auto 30px;">
+      Pošalji nam poruku i reci šta ti treba.
+      Zajedno možemo napraviti nešto dobro.
+    </p>
+
+    <a href="mailto:bytex.contact@gmail.com" class="button">
+      Kontaktiraj Bytex
+    </a>
+
+  </section>
+
+  <footer>
+    © 2026 Bytex — Digitalna rešenja
+  </footer>
+
+</body>
+</html>
